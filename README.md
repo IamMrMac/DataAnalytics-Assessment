@@ -1,33 +1,33 @@
 # DataAnalytics-Assessment
 
-## Objective
+## Objective 
 The primary objective of this project is to solve real-world business problems by writing efficient, accurate, and well-documented SQL queries. It focuses on extracting actionable insights from users_customuser, savings_savingsaccount, plans_plan, and withdrawals_withdrawal data to support cross-selling, customer segmentation, operational monitoring, and marketing strategies.
 
-## Table of Contents  
-High-Value Customers with Multiple Products  
-Transaction Frequency Analysis  
-Accounts with No Inflow for Over a Year  
-Customer Lifetime Value (CLV) Estimation  
-Challenges & Resolutions  
+## Table of Contents 
+High-Value Customers with Multiple Products 
+Transaction Frequency Analysis 
+Accounts with No Inflow for Over a Year 
+Customer Lifetime Value (CLV) Estimation 
+Challenges & Resolutions 
 
-## High-Value Customers with Multiple Products  
-### Question:  
+## High-Value Customers with Multiple Products 
+### Question: 
 Write a query to find customers with at least one funded savings plan AND one funded investment plan, sorted by total deposits.
-### Approach:   
-This query identifies customers who have both funded savings and investment plans. It counts the number of each plan type per customer and sums their total deposits (converted from kobo to Naira). Only customers with at least one funded savings plan and one funded investment plan are included, sorted by total deposits in descending order.
-### Key Steps:  
-Join users_customeuser, savings_savingsaccount, and plans_plan tables.  
-Use conditional aggregation to count funded savings and investment plans.  
-Filter using HAVING to ensure both product types are present.  
-Convert deposit amounts from kobo to Naira for readability.  
-
-## Transaction Frequency Analysis  
-### Question:  
-Calculate the average number of transactions per customer per month and categorize them:  
-"High Frequency" (≥10 transactions/month)  
-"Medium Frequency" (3-9 transactions/month)  
-"Low Frequency" (≤2 transactions/month)  
 ### Approach:  
+This query identifies customers who have both funded savings and investment plans. It counts the number of each plan type per customer and sums their total deposits (converted from kobo to Naira). Only customers with at least one funded savings plan and one funded investment plan are included, sorted by total deposits in descending order.
+### Key Steps: 
+Join users_customeuser, savings_savingsaccount, and plans_plan tables. 
+Use conditional aggregation to count funded savings and investment plans. 
+Filter using HAVING to ensure both product types are present. 
+Convert deposit amounts from kobo to Naira for readability. 
+
+## Transaction Frequency Analysis 
+### Question: 
+Calculate the average number of transactions per customer per month and categorize them: 
+"High Frequency" (≥10 transactions/month) 
+"Medium Frequency" (3-9 transactions/month) 
+"Low Frequency" (≤2 transactions/month) 
+### Approach: 
 This query analyzes how frequently customers transact, categorizing them as High, Medium, or Low Frequency based on their average monthly transaction count. It calculates the number of months each customer has been active and divides their total transactions accordingly.
 ### Key Steps:  
 Count total transactions per customer.  

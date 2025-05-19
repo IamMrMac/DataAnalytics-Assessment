@@ -16,10 +16,10 @@ Write a query to find customers with at least one funded savings plan AND one fu
 ### Approach:  
 This query identifies customers who have both funded savings and investment plans. It counts the number of each plan type per customer and sums their total deposits (converted from kobo to Naira). Only customers with at least one funded savings plan and one funded investment plan are included, sorted by total deposits in descending order.
 ### Key Steps: 
-Join users_customeuser, savings_savingsaccount, and plans_plan tables. 
-Use conditional aggregation to count funded savings and investment plans. 
-Filter using HAVING to ensure both product types are present. 
-Convert deposit amounts from kobo to Naira for readability. 
+Join users_customeuser, savings_savingsaccount, and plans_plan tables.  
+Use conditional aggregation to count funded savings and investment plans.  
+Filter using HAVING to ensure both product types are present.  
+Convert deposit amounts from kobo to Naira for readability.  
 
 ## Transaction Frequency Analysis 
 ### Question: 

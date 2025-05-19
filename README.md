@@ -1,11 +1,13 @@
 # DataAnalytics-Assessment
 
+The primary objective of this project is to solve real-world business problems by writing efficient, accurate, and well-documented SQL queries. It focuses on extracting actionable insights from users_customuser, savings_savingsaccount, plans_plan, and withdrawals_withdrawal data to support cross-selling, customer segmentation, operational monitoring, and marketing strategies.
+
 Table of Contents
-High-Value Customers with Multiple Products
-Transaction Frequency Analysis
-Accounts with No Inflow for Over a Year
-Customer Lifetime Value (CLV) Estimation
-Challenges & Resolutions
+High-Value Customers with Multiple Products  
+Transaction Frequency Analysis  
+Accounts with No Inflow for Over a Year  
+Customer Lifetime Value (CLV) Estimation  
+Challenges & Resolutions  
 
 High-Value Customers with Multiple Products
 Question: 
